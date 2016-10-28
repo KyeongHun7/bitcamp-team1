@@ -9,6 +9,7 @@ public class EduApp {
     BookController bookController = new BookController(keyScan);
     TeacherController teacherController = new TeacherController(keyScan);
     Lecturecontroller lecturecontroller = new Lecturecontroller(keyScan);
+<<<<<<< HEAD
 
     System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.");
     System.out.println("지원하지 않는 명령어 입니다.");
@@ -23,17 +24,23 @@ public class EduApp {
     System.out.println("지원하지 않는 명령어 입니다.");
 
 
+=======
+    System.out.println();
+    System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.;;;");
+    System.out.printf("menu을 입력해주세요.\n\n");
+>>>>>>> b5810c182e8c68e72bac6ff0f1eb428ec27a87d8
 
     loop :
     while (true) {
-      System.out.println("명령>");
+      System.out.print("명령>");
       String input = keyScan.nextLine().toLowerCase();
 
-
       switch (input) {
+
         case "menu" :
            doMenu();
            break;
+<<<<<<< HEAD
         case "go 1" : bookController.service();break;
         case "go 2" : teacherController.service();break;
         case "go 3" : lecturecontroller.service();break;
@@ -41,8 +48,16 @@ public class EduApp {
 
 
 
+=======
+        case "go 1" : bookController.service(); break;
+        case "go 2" : teacherController.service(); break;
+        case "go 3" : lecturecontroller.service(); break;
+>>>>>>> b5810c182e8c68e72bac6ff0f1eb428ec27a87d8
 
         case "quit" :
+         System.out.println("잘가용");
+         System.out.println("잘가용");
+         System.out.println("잘가용");
          System.out.println("잘가용");
          break loop;
          default :
@@ -54,8 +69,7 @@ public class EduApp {
       System.out.println("[메뉴]");
       System.out.println("1. 교재관리");
       System.out.println("2. 강사관리");
-      System.out.println("3. 강의관리");
-
+      System.out.printf("3. 강의관리\n\n");
       System.out.println("메뉴 이동은 'go 메뉴 번호'를 누르세요");
     }
 
