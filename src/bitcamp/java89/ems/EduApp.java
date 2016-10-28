@@ -14,11 +14,13 @@ public class EduApp {
 
     loop :
     while (true) {
-      System.out.println("명령>");
+      System.out.println("'menu'를 입력하여 주시요 ");
+      System.out.print("명령>");
       String input = keyScan.nextLine().toLowerCase();
 
 
       switch (input) {
+
         case "menu" :
            doMenu();
            break;
