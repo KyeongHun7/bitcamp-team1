@@ -11,6 +11,12 @@ public class EduApp {
     Lecturecontroller lecturecontroller = new Lecturecontroller(keyScan);
 
     System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+
 
     loop :
     while (true) {
@@ -25,6 +31,7 @@ public class EduApp {
         case "go 1" : bookController.service();break;
         case "go 2" : teacherController.service();break;
         case "go 3" : lecturecontroller.service();break;
+        case "help3" : break;
 
 
 
