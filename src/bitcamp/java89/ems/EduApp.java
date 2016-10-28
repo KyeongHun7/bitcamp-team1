@@ -9,29 +9,10 @@ public class EduApp {
     BookController bookController = new BookController(keyScan);
     TeacherController teacherController = new TeacherController(keyScan);
     Lecturecontroller lecturecontroller = new Lecturecontroller(keyScan);
-<<<<<<< HEAD
 
-    System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-    System.out.println("지원하지 않는 명령어 입니다.");
-
-
-=======
     System.out.println();
     System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.;;;;;;");
     System.out.printf("menu을 입력해주세요.\n\n");
->>>>>>> b5810c182e8c68e72bac6ff0f1eb428ec27a87d8
 
     loop :
     while (true) {
@@ -43,24 +24,12 @@ public class EduApp {
         case "menu" :
            doMenu();
            break;
-<<<<<<< HEAD
-        case "go 1" : bookController.service();break;
-        case "go 2" : teacherController.service();break;
-        case "go 3" : lecturecontroller.service();break;
-        case "help3" : break;
 
-
-
-=======
         case "go 1" : bookController.service(); break;
         case "go 2" : teacherController.service(); break;
         case "go 3" : lecturecontroller.service(); break;
->>>>>>> b5810c182e8c68e72bac6ff0f1eb428ec27a87d8
 
         case "quit" :
-         System.out.println("잘가용");
-         System.out.println("잘가용");
-         System.out.println("잘가용");
          System.out.println("잘가용");
          break loop;
          default :
