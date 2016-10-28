@@ -7,6 +7,7 @@ public class EduApp {
 
   public static void main(String[] args) {
     BookController bookController = new BookController(keyScan);
+    TeacherController teacherController = new TeacherController(keyScan);
     System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.");
 
     loop :
@@ -20,6 +21,7 @@ public class EduApp {
            doMenu();
            break;
         case "go 1" : bookController.service();
+        case "go 2" : teacherController.service();
         break;
 
 
@@ -34,6 +36,7 @@ public class EduApp {
     static void doMenu() {
       System.out.println("[메뉴]");
       System.out.println("1. 교재관리");
+      System.out.println("2. 강사관리");
       System.out.println("메뉴 이동은 'go 메뉴 번호'를 누르세요");
     }
 
