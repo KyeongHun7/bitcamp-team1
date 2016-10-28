@@ -16,6 +16,12 @@ public class EduApp {
     System.out.println("지원하지 않는 명령어 입니다.");
     System.out.println("지원하지 않는 명령어 입니다.");
     System.out.println("지원하지 않는 명령어 입니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+    System.out.println("지원하지 않는 명령어 입니다.");
+
 
 
     loop :
