@@ -10,11 +10,11 @@ public class EduApp {
     TeacherController teacherController = new TeacherController(keyScan);
     Lecturecontroller lecturecontroller = new Lecturecontroller(keyScan);
     System.out.println();
-    System.out.printf("비트캠프 관리 시스템에 오신걸 환영합니다.\n\n");
+    System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.");
+    System.out.printf("menu을 입력해주세요.\n\n");
 
     loop :
     while (true) {
-      System.out.println("'menu'를 입력하여 주세요. ");
       System.out.print("명령>");
       String input = keyScan.nextLine().toLowerCase();
 
@@ -38,8 +38,7 @@ public class EduApp {
       System.out.println("[메뉴]");
       System.out.println("1. 교재관리");
       System.out.println("2. 강사관리");
-      System.out.println("3. 강의관리");
-
+      System.out.printf("3. 강의관리\n\n");
       System.out.println("메뉴 이동은 'go 메뉴 번호'를 누르세요");
     }
 
