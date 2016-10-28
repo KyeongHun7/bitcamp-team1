@@ -9,28 +9,23 @@ public class EduApp {
     BookController bookController = new BookController(keyScan);
     TeacherController teacherController = new TeacherController(keyScan);
     Lecturecontroller lecturecontroller = new Lecturecontroller(keyScan);
-
-    System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.");
+    System.out.println();
+    System.out.printf("비트캠프 관리 시스템에 오신걸 환영합니다.\n\n");
 
     loop :
     while (true) {
-      System.out.println("'menu'를 입력하여 주시요 ");
+      System.out.println("'menu'를 입력하여 주세요. ");
       System.out.print("명령>");
       String input = keyScan.nextLine().toLowerCase();
-
 
       switch (input) {
 
         case "menu" :
            doMenu();
            break;
-        case "go 1" : bookController.service();break;
-        case "go 2" : teacherController.service();break;
-        case "go 3" : lecturecontroller.service();break;
-
-
-
-
+        case "go 1" : bookController.service(); break;
+        case "go 2" : teacherController.service(); break;
+        case "go 3" : lecturecontroller.service(); break;
         case "quit" :
          System.out.println("잘가용");
          break loop;
