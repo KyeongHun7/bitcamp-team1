@@ -30,6 +30,8 @@ public class EduApp {
         case "help2" : break;
         case "quit" :
          System.out.println("잘가용");
+         System.out.println("잘가용");
+         System.out.println("잘가용");
          break loop;
          default :
          System.out.println("지원하지 않는 명령어 입니다.");
