@@ -49,7 +49,7 @@ public class BookController {
 
   private void doAdd() {
     Book book = new Book();
-    System.out.println("교제 제목?(예 : 엄진영의 백문의 부려실행) ");
+    System.out.println("교제 제목?(예 : 엄진영의 백문의 불여실행) ");
     System.out.print("Add> ");
     book.name = this.keyScan.nextLine();
 
