@@ -10,7 +10,7 @@ public class EduApp {
     TeacherController teacherController = new TeacherController(keyScan);
     Lecturecontroller lecturecontroller = new Lecturecontroller(keyScan);
     System.out.println();
-    System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.;;;;;");
+    System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.;;;;;;");
     System.out.printf("menu을 입력해주세요.\n\n");
 
     loop :
