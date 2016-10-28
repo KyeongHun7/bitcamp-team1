@@ -29,7 +29,7 @@ public class EduApp {
 
 =======
     System.out.println();
-    System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.;;;;;");
+    System.out.println("비트캠프 관리 시스템에 오신걸 환영합니다.;;;;;;");
     System.out.printf("menu을 입력해주세요.\n\n");
 >>>>>>> b5810c182e8c68e72bac6ff0f1eb428ec27a87d8
 
