@@ -24,13 +24,12 @@ public class EduApp {
         case "menu" :
            doMenu();
            break;
-
         case "go 1" : bookController.service(); break;
         case "go 2" : teacherController.service(); break;
         case "go 3" : lecturecontroller.service(); break;
 
         case "quit" :
-         System.out.println("잘가용");
+         System.out.println("Good Bye!");
          break loop;
          default :
          System.out.println("지원하지 않는 명령어 입니다.");
