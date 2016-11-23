@@ -8,6 +8,11 @@ import bitcamp.java89.ems.server.controller.ContactDeleteController;
 import bitcamp.java89.ems.server.controller.ContactListController;
 import bitcamp.java89.ems.server.controller.ContactUpdateController;
 import bitcamp.java89.ems.server.controller.ContactViewController;
+import bitcamp.java89.ems.server.controller.StudentAddController;
+import bitcamp.java89.ems.server.controller.StudentDeleteController;
+import bitcamp.java89.ems.server.controller.StudentListController;
+import bitcamp.java89.ems.server.controller.StudentUpdateController;
+import bitcamp.java89.ems.server.controller.StudentViewController;
 import bitcamp.java89.ems.server.controller.TeacherAddController;
 import bitcamp.java89.ems.server.controller.TeacherDeleteController;
 import bitcamp.java89.ems.server.controller.TeacherListController;
@@ -31,6 +36,11 @@ public class EduAppServer {
     commandMap.put("teacher/add", new TeacherAddController());
     commandMap.put("teacher/delete", new TeacherDeleteController());
     commandMap.put("teacher/update", new TeacherUpdateController());
+    commandMap.put("student/list", new StudentListController());
+    commandMap.put("student/delete", new StudentDeleteController());
+    commandMap.put("student/add", new StudentAddController());
+    commandMap.put("student/update", new StudentUpdateController());
+    commandMap.put("student/view", new StudentViewController());
   }
 
   private void service() throws Exception {
