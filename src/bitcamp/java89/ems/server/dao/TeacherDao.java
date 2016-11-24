@@ -25,7 +25,45 @@ public class TeacherDao {
   public TeacherDao() {
     this.load();
   }
+  
+  public ArrayList<Teacher> getList() {
+    return this.list;
+  }
 
+  synchronized public void insert(Teacher teacher) {
+    list.add(teacher);
+    try {this.save();} catch (Exception e) {}
+  }
+  
+  synchronized public void update(Teacher teacher) {
+    for (int i = 0; i < list.size(); i++) {
+      if (list.get(i).getId().equals(teacher.getId())) {
+        list.set(i, teacher);
+        try {this.save();} catch (Exception e) {}
+        return;
+      }
+    }
+  }
+  
+  synchronized public void delete(String id) {
+    for (int i = 0; i < list.size(); i++) {
+      if (list.get(i).getId().equals(id)) {
+        list.remove(i);
+        try {this.save();} catch (Exception e) {}
+        return;
+      }
+    }
+  }
+  
+  public boolean existId(String id) {
+    for (Teacher teacher : list) {
+      if (teacher.getId().equals(id)) {
+        return true;
+      }
+    }
+    return false;
+  }
+  
   @SuppressWarnings("unchecked")
   private void load() {
     FileInputStream in0 = null;
@@ -62,9 +100,6 @@ public class TeacherDao {
     out0.close();
   }
 
-  public ArrayList<Teacher> getList() {
-    return this.list;
-  }
   
   public ArrayList<Teacher> getListById(String id) {
     ArrayList<Teacher> results = new ArrayList<>();
@@ -76,39 +111,6 @@ public class TeacherDao {
     return results;
   }
   
-  synchronized public void insert(Teacher teacher) {
-    list.add(teacher);
-    try {this.save();} catch (Exception e) {}
-  }
-
-  synchronized public void update(Teacher teacher) {
-    for (int i = 0; i < list.size(); i++) {
-      if (list.get(i).getId().equals(teacher.getId())) {
-        list.set(i, teacher);
-        try {this.save();} catch (Exception e) {}
-        return;
-      }
-    }
-  }
-
-
-  synchronized public void delete(String id) {
-    for (int i = 0; i < list.size(); i++) {
-      if (list.get(i).getId().equals(id)) {
-        list.remove(i);
-        try {this.save();} catch (Exception e) {}
-        return;
-      }
-    }
-  }
   
-  public boolean existId(String id) {
-    for (Teacher teacher : list) {
-      if (teacher.getId().equals(id)) {
-        return true;
-      }
-    }
-    return false;
-  }
   
 }

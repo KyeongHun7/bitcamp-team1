@@ -13,12 +13,13 @@ public class TeacherAddController implements Command {
   public TeacherAddController() {
     teacherDao = TeacherDao.getInstance();
   }
-public void service(HashMap<String,String> paramMap, PrintStream out) {
+  
+  public void service(HashMap<String,String> paramMap, PrintStream out) {
 
-  if (teacherDao.existId(paramMap.get("id"))) {
-    out.println("같은 아이디가 존재합니다. 등록을 취소합니다.");
-    return;
-  }
+    if (teacherDao.existId(paramMap.get("id"))) {
+      out.println("같은 아이디가 존재합니다. 등록을 취소합니다.");
+      return;
+    }
   
     Teacher teacher = new Teacher();
     teacher.setId(paramMap.get("id"));

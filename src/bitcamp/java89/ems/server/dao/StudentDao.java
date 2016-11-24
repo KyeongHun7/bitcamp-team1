@@ -41,7 +41,7 @@ public class StudentDao {
     return null;
   }
   
-  public void insert(Student student) {
+  synchronized public void insert(Student student) {
     list.add(student);
     try{this.save();}catch(Exception e){}
     
