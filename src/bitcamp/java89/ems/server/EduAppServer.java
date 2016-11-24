@@ -31,26 +31,26 @@ public class EduAppServer {
 
   public EduAppServer() {
 //    클라이언트 요청을 처리할 Command 구현체 준비
-    commandMap.put("contact/list", new ContactListController());
-    commandMap.put("contact/view", new ContactViewController());
-    commandMap.put("contact/add", new ContactAddController());
-    commandMap.put("contact/delete", new ContactDeleteController());
-    commandMap.put("contact/update", new ContactUpdateController());
-    commandMap.put("teacher/list", new TeacherListController());
-    commandMap.put("teacher/view", new TeacherViewController());
-    commandMap.put("teacher/add", new TeacherAddController());
-    commandMap.put("teacher/delete", new TeacherDeleteController());
-    commandMap.put("teacher/update", new TeacherUpdateController());
-    commandMap.put("student/list", new StudentListController());
-    commandMap.put("student/delete", new StudentDeleteController());
-    commandMap.put("student/add", new StudentAddController());
-    commandMap.put("student/update", new StudentUpdateController());
-    commandMap.put("student/view", new StudentViewController());
     commandMap.put("book/list", new BookListController());
     commandMap.put("book/view", new BookViewController());
     commandMap.put("book/add", new BookAddController());
     commandMap.put("book/delete", new BookDeleteController());
     commandMap.put("book/update", new BookUpdateController());
+    commandMap.put("contact/list", new ContactListController());
+    commandMap.put("contact/view", new ContactViewController());
+    commandMap.put("contact/add", new ContactAddController());
+    commandMap.put("contact/delete", new ContactDeleteController());
+    commandMap.put("contact/update", new ContactUpdateController());
+    commandMap.put("student/list", new StudentListController());
+    commandMap.put("student/delete", new StudentDeleteController());
+    commandMap.put("student/add", new StudentAddController());
+    commandMap.put("student/update", new StudentUpdateController());
+    commandMap.put("student/view", new StudentViewController());
+    commandMap.put("teacher/list", new TeacherListController());
+    commandMap.put("teacher/view", new TeacherViewController());
+    commandMap.put("teacher/add", new TeacherAddController());
+    commandMap.put("teacher/delete", new TeacherDeleteController());
+    commandMap.put("teacher/update", new TeacherUpdateController());
   }
 
   private void service() throws Exception {

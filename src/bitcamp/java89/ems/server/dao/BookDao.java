@@ -50,7 +50,7 @@ public class BookDao {
     } catch (EOFException e) {
      
     } catch(Exception e) {
-      System.out.println("교제 데이터 로딩 중 오류 발생!");
+      System.out.println("교재 데이터 로딩 중 오류 발생!");
       list = new ArrayList<>();
     } finally {
       try {
@@ -60,7 +60,6 @@ public class BookDao {
 
       }
     }
-    System.out.println("데이터가 로드되었씁니다.");
   }
   
   synchronized public void save() throws Exception{
@@ -71,7 +70,6 @@ public class BookDao {
     
     out2.close();
     out.close();
-    System.out.println("데이터가 저장되었씁니다.");
   }
 
   
